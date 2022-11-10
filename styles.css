@@ -7,7 +7,7 @@
 
 :root {
   --color-primary: #191d2b;
-  --color-secondary: #901c1c;
+  --color-secondary: #27ae60;
   --color-white: #ffffff;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -29,7 +29,7 @@
 body {
   background-color: var(--color-primary);
   font-size: 1.1rem;
-  font-family: "orgonite";
+  font-family: "poppins", sans-serif;
   color: var(--color-white);
   transition: all 0.4s ease-in-out;
 }
@@ -65,30 +65,48 @@ section {
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: #e8dddbcc;
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: slateblue;
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: rgb(167, 252, 30);
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: rgb(233, 30, 252);
 }
 
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: hotpink;
 }
 
-/* Controls */
-.controls {
+.active {
+  display: block;
+  animation: scaleAnim 1s ease-in-out;
+  @keyframes: scaleAnim {
+    0% {
+      transform: translateY(-100%) scaleY(0);
+    }
+    100% {
+      transform: translateY(0) scaleY(1);
+    }
+  }
+}
+
+/* Nav Icons */
+.p-control {
   position: fixed;
   z-index: 10;
   top: 50%;
@@ -100,6 +118,7 @@ section {
   transform: translateY(-50%);
 }
 
+/* Home btn */
 .active-btn {
   background-color: var(--color-secondary) !important;
   transition: all 0.4s ease-in-out;
@@ -109,6 +128,7 @@ i {
   color: var(--color-white) !important;
 }
 
+/* Nav Icons */
 .control {
   padding: 1rem;
   cursor: pointer;
@@ -119,12 +139,12 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0.6rem 0;
+  margin: 0.7rem 0;
   box-shadow: var(--box-shadow-1);
 }
 
 i {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var (--color-grey-2);
   pointer-events: none;
 }
