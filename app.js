@@ -1,37 +1,12 @@
-const sections = document.querySelectorAll('.section');
-const sectBtns = document.querySelectorAll('.p-control');
-const sectBtn = document.querySelectorAll('.control');
-const allSections = document.querySelector('.main-content');
-
-function PageTrans() {
-    //btn click active class
-    for (let i = 0; i < sectBtn.length; i++) {
-        sectBtn[i].addEventListener('click', function () {
-            let currentBtn = document.querySelectorAll('active-btn');
-            currentBtn[0].className = currentBtn[0].className.replace('active-btn', '');
-            this.className += ' .active-btn';
-        })
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname) {
+    for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
     }
-
-    // Section Active Class
-    allSections.addEventListener('click', (e) => {
-        const id = e.target.dataset.id;
-        if (id) {
-            //remove selected from the other btns
-            sectBtns.forEach((btn) => {
-                btn.classList.remove('active')
-            })
-            e.target.classList.add('active')
-
-            //hide other sections
-            sections.forEach((section) => {
-                section.classList.remove('active')
-            })
-            const element = document.getElementById(id)
-            element.classList.add('active');
-        }
-    })
+    for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
 }
-
-PageTrans();
-
