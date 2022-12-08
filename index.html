@@ -31,15 +31,17 @@
         <div class="container">
             <nav>
                 <img src="/assets/a-logo3.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-rectangle-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <span>Front end developer</span>
-                <h1>Hi, I'm <span class="name">Anouxay</span>.</h1>
+                <h1>Hello, I'm <span class="name">Anouxay</span>.</h1>
 
             </div>
         </div>
@@ -180,14 +182,17 @@
                             rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a> -->
 
                     </div>
-                    <a href="assets/Resume3.pdf" Download class="btn"><i class="fa-solid fa-download"></i> Download
+                    <a href="assets/Resume4.pdf" Download class="btn"><i class="fa-solid fa-download"></i> Download
                         Resume</a>
 
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form action="https://formsubmit.co/ainthaly@gmail.com" method="POST">
+                        <input type="text" name="_honey" style="display: none;">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="/capstone/success.html">
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn2">Submit</button>
                     </form>
@@ -196,6 +201,8 @@
         </div>
     </div>
     <script src="app.js"></script>
+    <script src="/mobile.js"></script>
+
 </body>
 
 </html>
