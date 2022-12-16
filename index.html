@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--Meta stuff-->
+    <meta charset="UTF-8">
+    <meta http-equiv="" X-UA-Compatible" content="" IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Google Font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Poppins&family=Roboto:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+
+
+    <title>Anouxay</title>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/assets/a-logo3.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-rectangle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <span>Front end web developer</span>
+                <h1>Hello, I'm <span class="name">Anouxay</span>.</h1>
+
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="contain">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/xay01.png" alt="Image of me">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I like working in a team setting so that we may learn from
+                        each other. I like structure, order and
+                        am organized. I enjoy video games, love to stay active by working out, big foodie person and I
+                        love
+                        to explore by traveling. I have a big interest in continously self improving my skills through
+                        the
+                        entire front end developer
+                        spectrum.
+
+                        <br><span></br>
+                            <ul><b>Fun Facts</b></ul>
+                        </span>
+                        <li>My name is Anouxay Sichanh & is pronounced (Ah-nu-sai) (See-chon)</li>
+                        <li>People call me Xay (Sai) for short</li>
+                        <li>I currently live in Florida</li>
+                        <li>I am Laotian & Thai (1st gen born in the US)</li>
+                        </ul>
+
+                    </p>
+
+                    <div class="tab-titles">
+
+
+
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                            <span>
+                                <i class="fa-solid fa-hand"></i>
+                            </span>
+                            <span>
+                                Skills
+                            </span>
+                        </p>
+
+                        <p class="tab-links" onclick="opentab('experience')">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <span>Experience</span>
+                        </p>
+
+
+                        <p class="tab-links" onclick="opentab('education')">
+                            <i class="fa-solid fa-book-open"></i>
+                            <span>
+                                Education & Certifications
+                            </span>
+                        </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <i class="fa-brands fa-html5"></i> <span>HTML</span><br>
+                            </li>
+
+                            <li>
+                                <i class="fa-brands fa-css3-alt"></i> <span>CSS</span><br>
+                            </li>
+
+                            <li>
+                                <i class="fa-brands fa-square-js"></i> <span>Javascript</span><br>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-people-group"></i>
+                                <span>People skills</span><br>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <p>2017-2021</p>
+                                <h5>Gig work <span> - Uber, UberEats, Doordash, PostMates & Instacart</span></h5><br>
+                            </li>
+
+                            <li>
+                                <p>2007-2019</p>
+                                <h5>Supervisor<span> - Starbucks</span></h5><br>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <p>September 2022 - December 2022</p>
+                                <h5>Front End Developer<span> - CodeX Academy</span></h5><br>
+                            </li>
+
+                            <li>
+                                <p>April 2022 - June 2022</p>
+                                <h5>IT Support Specialist Certification<span> - Google</span></h5><br>
+                            </li>
+
+                            <li>
+                                <p>2005-2006</p>
+                                <h5>Diploma<span> - Robbinsdale Armstrong High School Plymouth, MN</span></h5><br>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+
+                    <p><i class="fa-solid fa-user"></i> Anouxay Sichanh</p>
+
+                    <p><i class="fa-solid fa-envelope"></i> Email: <a href="mailto: ainthaly@gmail.com"><span
+                                class="email">ainthaly@gmail.com</a></span>
+                    </p>
+
+                    <div class="social-icons">
+
+                        <a href="https://www.github.com/xayrax88" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-square-github"></i></a>
+
+                        <!-- <a href="https://www.linkedin.com/in/anouxay-sichanh" target="_blank" 
+                            rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a> -->
+
+                    </div>
+                    <a href="assets/Resume4.pdf" Download class="btn"><i class="fa-solid fa-download"></i> Download
+                        Resume</a>
+
+                </div>
+                <div class="contact-right">
+                    <form action="https://formsubmit.co/ainthaly@gmail.com" method="POST">
+                        <!-- 
+                        <input type="text" name="_" style="display: none;">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="/success.html">
+                        -->
+                        <input type="text" name="Name" placeholder="Your Name" required>
+
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="/mobile.js"></script>
+
+</body>
+
+</html>
