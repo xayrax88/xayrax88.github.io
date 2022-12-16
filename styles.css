@@ -44,21 +44,23 @@ nav ul li {
   margin: 10px 20px;
 }
 nav ul li a {
-  color: white;
+  color: whitesmoke;
   text-decoration: none;
   font-size: 18px;
   position: relative;
 }
+
 nav ul li a::after {
   content: "";
   width: 0;
   height: 3px;
-  background: red;
+  background: whitesmoke;
   position: absolute;
   left: 0;
   bottom: -6px;
   transition: 0.5s;
 }
+
 nav ul li a:hover::after {
   width: 100%;
 }
@@ -92,6 +94,7 @@ after .name {
   flex-wrap: wrap;
 }
 
+/*  Left Side About*/
 .about-col-1 {
   flex-basis: 35%;
   padding-left: 1.5rem;
@@ -101,7 +104,7 @@ after .name {
   width: 100%;
   border-radius: 15px;
 }
-
+/* Right Side About */
 .about-col-2 {
   flex-basis: 60%;
   margin-left: 1.5rem;
@@ -130,7 +133,7 @@ after .name {
   content: "";
   width: 0;
   height: 3px;
-  background: red;
+  background: whitesmoke;
   position: absolute;
   left: 0;
   bottom: -8px;
