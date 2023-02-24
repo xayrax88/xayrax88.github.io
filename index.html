@@ -2,210 +2,405 @@
 <html lang="en">
 
 <head>
-
-    <!--Meta stuff-->
-    <meta charset="UTF-8">
-    <meta http-equiv="" X-UA-Compatible" content="" IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles.css">
-
-    <!--Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!--Google Font link-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Poppins&family=Roboto:ital,wght@0,300;1,300&display=swap"
-        rel="stylesheet">
-
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
     <title>Anouxay</title>
 
+    <!-- Font Awesome-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+
+    <!-- CSS & Bootstrap-->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body>
-    <div id="header">
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div class="container">
-            <nav>
-                <img src="/assets/a-logo3.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-rectangle-xmark" onclick="closemenu()"></i>
+            <a class="navbar-brand" href="#page-top"><i class="fa-brands fa-atlassian"></i> N O U X A Y </a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio"><i
+                                class="fa-solid fa-folder-open"></i> Projects</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about"><i
+                                class="fa-solid fa-user"></i> About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact"><i
+                                class="fa-solid fa-envelope"></i> Contact</a></li>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <span>Front end web developer</span>
-                <h1>Hello, I'm <span class="name">Anouxay</span>.</h1>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Avatar Image-->
+            <img class="masthead-avatar mb-5" src="assets/img/xayprofile2wht.png" alt="..." />
+            <!-- Masthead Heading-->
+            <h1 class="masthead-heading text-uppercase mb-0">Hi, I'm Anouxay.</h1>
+
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fa-brands fa-atlassian"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Masthead Subheading-->
+            <p class="masthead-subheading font-weight-light mb-0">Front End Web Developer.</p>
+        </div>
+    </header>
+
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Projects</h2>
+
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fa-solid fa-folder-open"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <!-- Portfolio Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/projectxay.png" alt="..." />
+                    </div>
+                </div>
+                <!-- Portfolio Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/to-do-list.png" alt="..." />
+                    </div>
+                </div>
+                <!-- Portfolio Item 3-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/memoria.png" alt="..." />
+                    </div>
+                </div>
+
+
 
             </div>
         </div>
-    </div>
-    <!-- about -->
-    <div id="about">
-        <div class="contain">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="assets/xay01.png" alt="Image of me">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>
-                        I like working in a team setting so that we may learn from
-                        each other. I like structure, order and
-                        am organized. I enjoy video games, love to stay active by working out, big foodie person and I
-                        love
-                        to explore by traveling. I have a big interest in continously self improving my skills through
-                        the
-                        entire front end developer
-                        spectrum.
+    </section>
 
-                        <br><span></br>
-                            <ul><b>Fun Facts</b></ul>
-                        </span>
+    <!-- About Section-->
+    <section class="page-section bg-primary text-white mb-0" id="about">
+        <div class="container rounded about">
+            <!-- About Section Heading-->
+            <h2 class="about2 page-section-heading text-center text-uppercase text-white">About Me</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fa-solid fa-user"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="row">
+                <div class="col-lg-4 ms-auto">
+
+                    <p class="lead">I am a recent graduate from Code X Academy bootcamp. Continously self improving my
+                        skills through
+                        the front end spectrum. I like working in a team setting so that we may learn from
+                        each other. I like structure, order and
+                        am organized. So far what I experienced in coding from my bootcamp are:</p>
+                    <div class="row">
+                        <div class="col code-icons">
+
+                            <li><i class="fa-brands fa-html5"></i> HTML5</li>
+                            <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+                            <li><i class="fa-brands fa-bootstrap"></i> Bootstrap</li>
+                            <li><i class="fa-brands fa-git-alt"></i> Git</li>
+                        </div>
+                        <div class="col code-icons">
+                            <li><i class="fa-brands fa-react"></i> React.js</li>
+                            <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                            <li><i class="fa-solid fa-dollar-sign"></i> jQuery</li>
+                            <li><i class="fa-solid fa-fire"></i> Firebase</li>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 me-auto">
+                    <h2>Fun Facts</h2>
+                    <p class="lead">I enjoy <i class="fa-solid fa-gamepad"></i> video games, love to stay active
+                        by <i class="fa-solid fa-dumbbell"></i> working out, big
+                        foodie person and I
+                        love
+                        to <i class="fa-solid fa-shoe-prints"></i> travel.</p>
+                    <ul>
                         <li>My name is Anouxay Sichanh & is pronounced (Ah-nu-sai) (See-chon)</li>
                         <li>People call me Xay (Sai) for short</li>
                         <li>I currently live in Florida</li>
-                        <li>I am Laotian & Thai (1st gen born in the US)</li>
-                        </ul>
-
-                    </p>
-
-                    <div class="tab-titles">
-
-
-
-                        <p class="tab-links active-link" onclick="opentab('skills')">
-                            <span>
-                                <i class="fa-solid fa-hand"></i>
-                            </span>
-                            <span>
-                                Skills
-                            </span>
-                        </p>
-
-                        <p class="tab-links" onclick="opentab('experience')">
-                            <i class="fa-solid fa-briefcase"></i>
-                            <span>Experience</span>
-                        </p>
-
-
-                        <p class="tab-links" onclick="opentab('education')">
-                            <i class="fa-solid fa-book-open"></i>
-                            <span>
-                                Education & Certifications
-                            </span>
-                        </p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li>
-                                <i class="fa-brands fa-html5"></i> <span>HTML</span><br>
-                            </li>
-
-                            <li>
-                                <i class="fa-brands fa-css3-alt"></i> <span>CSS</span><br>
-                            </li>
-
-                            <li>
-                                <i class="fa-brands fa-square-js"></i> <span>Javascript</span><br>
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-people-group"></i>
-                                <span>People skills</span><br>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li>
-                                <p>2017-2021</p>
-                                <h5>Gig work <span> - Uber, UberEats, Doordash, PostMates & Instacart</span></h5><br>
-                            </li>
-
-                            <li>
-                                <p>2007-2019</p>
-                                <h5>Supervisor<span> - Starbucks</span></h5><br>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li>
-                                <p>September 2022 - December 2022</p>
-                                <h5>Front End Developer<span> - CodeX Academy</span></h5><br>
-                            </li>
-
-                            <li>
-                                <p>April 2022 - June 2022</p>
-                                <h5>IT Support Specialist Certification<span> - Google</span></h5><br>
-                            </li>
-
-                            <li>
-                                <p>2005-2006</p>
-                                <h5>Diploma<span> - Robbinsdale Armstrong High School Plymouth, MN</span></h5><br>
-                            </li>
-                        </ul>
-                    </div>
+                        <li>I am Laotian (1st gen born in the US)</li>
+                    </ul>
 
                 </div>
             </div>
+
         </div>
-    </div>
-    <!-- contact -->
-    <div id="contact">
+    </section>
+
+
+    <!-- Contact Section-->
+    <section class="page-section" id="contact">
+        <div class="container rounded contact-section">
+
+            <!-- Contact Section Heading-->
+            <h2 class="contact-sign page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+
+            <!-- Contact Section Form-->
+            <div class="contact-form row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+
+                    <form name="submit-to-google-sheet" id="contactForm">
+
+                        <!-- Name input-->
+                        <div class="form-floating mb-3">
+                            <input name="Name" class="form-control" id="name" type="text"
+                                placeholder="Enter your name...">
+                            <label for="name">Name</label>
+                        </div>
+
+                        <!-- Email address input-->
+                        <div class="form-floating mb-3">
+                            <input name="Email" class="form-control" id="email" type="email"
+                                placeholder="name@example.com">
+                            <label for="email">Email</label>
+                        </div>
+
+                        <!-- Message input-->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" name="Message" rows="6" id="message" type="text"
+                                placeholder="Enter your message here..." style="height: 10rem"></textarea>
+                            <label for="Message">Message</label>
+                        </div>
+
+                        <!-- Submit Button-->
+                        <button class="contact-btn btn btn-secondary btn-xl" id="submitButton"
+                            type="submit">Send</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer-->
+    <footer class="footer text-center">
         <div class="container">
             <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact</h1>
-
-                    <p><i class="fa-solid fa-user"></i> Anouxay Sichanh</p>
-
-                    <p><i class="fa-solid fa-envelope"></i> Email: <a href="mailto: ainthaly@gmail.com"><span
-                                class="email">ainthaly@gmail.com</a></span>
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p class="lead mb-0">
+                        Florida, US
+                        <br />
                     </p>
-
-                    <div class="social-icons">
-
-                        <a href="https://www.github.com/xayrax88" target="_blank" rel="noopener noreferrer"><i
-                                class="fa-brands fa-square-github"></i></a>
-
-                        <!-- <a href="https://www.linkedin.com/in/anouxay-sichanh" target="_blank" 
-                            rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a> -->
-
-                    </div>
-                    <a href="assets/Resume4.pdf" Download class="btn"><i class="fa-solid fa-download"></i> Download
-                        Resume</a>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">My Github</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.github.com/xayrax88/"
+                        target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                    <!-- <a class="btn btn-outline-light btn-social mx-1" href="https://www.github.com/xayrax88/"
+                        target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a> -->
 
                 </div>
-                <div class="contact-right">
-                    <form action="https://formsubmit.co/ainthaly@gmail.com" method="POST">
-                        <!-- 
-                        <input type="text" name="_" style="display: none;">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="/success.html">
-                        -->
-                        <input type="text" name="Name" placeholder="Your Name" required>
+                <!-- Footer About Text-->
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">Let's chat</h4>
+                    <p class="lead mb-0">
+                        <a class="btn btn-outline-light btn-social mx-1" href="#contact" rel="noopener noreferrer"><i
+                                class="fa-sharp fa-solid fa-comments"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn2">Submit</button>
-                    </form>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright &copy; Anouxay 2023</small></div>
+    </div>
+
+
+
+    <!-- Portfolio Modals-->
+    <!-- Portfolio Modal 1-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">My Portfolio</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fa-brands fa-atlassian"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <a href="#page-top" target="_blank" rel="noopener noreferrer">
+                                    <img class="zoom-img img-fluid rounded mb-5" src="assets/img/projectxay.png"
+                                        alt="..." /></a>
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">My very own portfolio website here. It's made with HTML, CSS, JavaScript
+                                    & Bootstrap.
+                                    <a href="https://www.github.com/xayrax88/capstone001" target="_blank"
+                                        rel="noopener noreferrer"><i class="fa-brands fa-github-alt"></i></a>
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="app.js"></script>
-    <script src="/mobile.js"></script>
+    <!-- Portfolio Modal 2-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">To-do list</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fa-solid fa-list"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <a href="https://dancing-seahorse-5c2285.netlify.app/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img class="zoom-img img-fluid rounded mb-5" src="assets/img/to-do-list.png"
+                                        alt="..." /></a>
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">A To-do list (work in progress), made with jQuery, JavaScript, HTML &
+                                    SCSS.
+                                    <a href="https://www.github.com/xayrax88/capstone002" target="_blank"
+                                        rel="noopener noreferrer"><i class="fa-brands fa-github-alt"></i></a>
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 3-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Memoria</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fa-solid fa-file-lines"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <a href="https://peaceful-travesseiro-bb992e.netlify.app" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img class="zoom-img img-fluid rounded mb-5" src="assets/img/memoria.png"
+                                        alt="..." /></a>
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">This is a journaling app, made with React.js, Bootstrap, JavaScript,
+                                    Firebase &
+                                    SCSS.
+                                    <a href="https://www.github.com/xayrax88/capstone003" target="_blank"
+                                        rel="noopener noreferrer"><i class="fa-brands fa-github-alt"></i></a>
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+
+
+
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    </script>
+    <script src="/js/contact.js"></script>
 </body>
 
 </html>
